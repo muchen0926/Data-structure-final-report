@@ -1,11 +1,48 @@
 # 隊列概念
-佇列可以並發的分派多個線程，並依指定的順序處理，把請求的資料放入佇列容器中，執行緒不需要等待，當佇列處理完資料後，執行緒再準時來取資料即可。請求資料的線程只與這個佇列容器存在關係，處理資料的線程down掉不會影響到請求資料的線程，佇列會派給其他線程處理這份數據，它實作了解耦，提高效率。當在多個執行緒或行程之間需要安全得交換資訊或共享資源時，就需要使用佇列。
+隊列可以並發地分派多個線程，並按指定的順序進行處理，將請求的數據放入隊列容器中，線程無需等待，當隊列處理完數據後，線程再準時來取數據即可。請求數據的線程只與這個隊列容器存在關係，處理數據的線程崩潰不會影響到請求數據的線程，隊列會將這份數據派給其他線程處理，它實現了解耦，提高效率。當在多個線程或進程之間需要安全地交換信息或共享資源時，就需要使用隊列。
 
 ## Python四種類型的佇列：
 
 Queue：FIFO 即 first in first out 先進先出
 LifoQueue：LIFO 即 last in first out 後進先出
-PriorityQueue：優先隊列，等級越低，越優先
+PriorityQueue：優先隊列，級別越低，越優先
 deque：雙端隊列
 
 # Queue常用方法
+
+    # -*- coding:utf-8 -*-
+    from queue import Queue
+
+    __author__ = 'Evan'
+
+
+    def queue_usage(put_data):
+        """
+        Queue常用方法
+        :param put_data: 放入的數據，列表或元組類型
+        :return:
+        """
+        q = Queue(maxsize=3)  # 設置隊列上限為3
+
+        for each in put_data:
+            print(f'添加({each})到隊列')
+            q.put(each)
+
+        print(f'返回隊列的大小: {q.qsize()}')
+        print(f'判斷隊列是否為空: {q.empty()}')
+        print(f'判斷隊列是否滿了: {q.full()}')
+
+        while not q.empty():
+            print(f'取出：{q.get()}')
+            q.task_done()  # 告訴隊列，這個數據已經使用完畢
+
+        q.join()  # 阻塞調用線程，直到隊列中的所有任務被處理掉
+
+
+    if __name__ == '__main__':
+        queue_usage(put_data=[1, 2, 3])
+
+
+## 输出结果：
+
+
