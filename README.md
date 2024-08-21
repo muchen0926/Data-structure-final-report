@@ -87,7 +87,7 @@ deque：雙端隊列
         
 ## 輸出結果
 
-![01]()
+![01](https://github.com/muchen0926/Data-structure-final-report/blob/main/Queue%20%E5%85%88%E9%80%B2%E5%85%88%E5%87%BA%E9%9A%8A%E5%88%97.png)
 
 ## 2. LifoQueue 後進先出隊列
 
@@ -127,7 +127,7 @@ deque：雙端隊列
 
 ## 輸出結果
 
-![01]()
+![01](https://github.com/muchen0926/Data-structure-final-report/blob/main/LifoQueue%20%E5%BE%8C%E9%80%B2%E5%85%88%E5%87%BA%E9%9A%8A%E5%88%97.png)
 
 ## 3. PriorityQueue 優先隊列
 
@@ -167,7 +167,7 @@ deque：雙端隊列
 
 ## 輸出結果
 
-![01]()
+![01](https://github.com/muchen0926/Data-structure-final-report/blob/main/PriorityQueue%20%E5%84%AA%E5%85%88%E9%9A%8A%E5%88%97.png)
 
 ## 4. deque 雙端隊列
 
@@ -208,4 +208,4 @@ deque：雙端隊列
 
 ## 輸出結果
 
-![01]()
+![01](https://github.com/muchen0926/Data-structure-final-report/blob/main/deque%20%E9%9B%99%E7%AB%AF%E9%9A%8A%E5%88%97.png)
