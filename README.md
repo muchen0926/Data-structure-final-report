@@ -45,4 +45,5 @@ deque：雙端隊列
 
 ## 输出结果：
 
+![01](https://github.com/muchen0926/Data-structure-final-report/blob/main/%E8%BC%B8%E5%87%BA%E7%B5%90%E6%9E%9C1.png)
 
