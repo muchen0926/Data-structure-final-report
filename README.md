@@ -209,3 +209,5 @@ deque：雙端隊列
 ## 輸出結果
 
 ![01](https://github.com/muchen0926/Data-structure-final-report/blob/main/deque%20%E9%9B%99%E7%AB%AF%E9%9A%8A%E5%88%97.png)
+
+(.ipynb檔可以直接在Google雲端硬碟中打開執行)
